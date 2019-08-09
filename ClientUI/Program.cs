@@ -16,7 +16,11 @@ namespace ClientUI
 
         static async Task AsyncMain()
         {
+            Console.Title = "ClientUI";
 
+            var endpointConfiguration = new EndpointConfiguration("ClientUI");
+
+            var transport = endpointConfiguration.UseTransport<LearningTransport>();
         }
     }
 }
