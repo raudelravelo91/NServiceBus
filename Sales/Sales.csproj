@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB691A4C-969D-4518-852C-2B4B3063910D}</ProjectGuid>
+    <ProjectGuid>{4ABF1824-6475-4CFE-AB3C-B08936AFB4B8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ClientUI</RootNamespace>
-    <AssemblyName>ClientUI</AssemblyName>
+    <RootNamespace>Sales</RootNamespace>
+    <AssemblyName>Sales</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlaceOrderHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Messages\Messages.csproj">
-      <Project>{ca1d717d-7cff-49dd-87ed-022ebb896071}</Project>
+      <Project>{CA1D717D-7CFF-49DD-87ED-022EBB896071}</Project>
       <Name>Messages</Name>
     </ProjectReference>
   </ItemGroup>
